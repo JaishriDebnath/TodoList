@@ -13,9 +13,28 @@ function App() {
           done: false,
     };
     setTodolist([...todolist , newTodoItem]); //here we spreading prev todolist and adding new todolist
+  setText("");
   };
+
+
   // console.log("todolist:",todolist);
   // console.log('text:',text);
+
+  const handleToggle = (itemId) =>{
+  const newTodolist = todolist.map((listItem)=>{
+    if(listItem.id === itemId){
+      return{...listItem,done: !listItem.done};
+    }
+    return listItem;
+  });
+  setTodolist(newTodolist);
+  
+  };
+  // console.log(todolist);
+  const handleDelete =(itemId) =>{
+    const newTodolist = todolist.filter((listItem) => listItem.id !== itemId);
+    setTodolist(newTodolist);
+  }
   return (
     <div className="App">
       <h1>To Do List</h1>
@@ -23,7 +42,10 @@ function App() {
         <input type="text" placeholder="Add Items To Your List" value={text} onChange={(e)=>setText(e.target.value)} />
         <span onClick={addItem}>+</span>
       </div>
-      <List todolist={todolist} />
+     {todolist.length >0 &&  <List todolist={todolist} 
+      handleToggle = {handleToggle} 
+      handleDelete = {handleDelete}
+      />}
     </div>
   );
 }
