@@ -13,5 +13,5 @@
 
 **Final View of Website**
 
-![Main View TodoList](https://github.com/JaishriDebnath/todolist/assets/170961214/37454c52-3b1b-4754-a774-73c62f5537de)
+![After View Todo](https://github.com/JaishriDebnath/todolist/assets/170961214/382e66b1-626b-4346-b252-188c7aa8cc55)
 
