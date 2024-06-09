@@ -3,8 +3,10 @@
 **Language used     :-   	React Js ,CSS , For storage - Local storage**\
 **Featurs:-**  
 •	**Adding data or Items to Todo List**\
-•	**Highlight Items of Todo List**\
+•	**Check as Complete Items of Todo List**\
 •	**Deleting Item of Todo List**\
+•	**Editing Item of Todo List**\
+•	**Remove All Item At Once**\
                 \
 \
 **Initial View of Website**
