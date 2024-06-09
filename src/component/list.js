@@ -1,9 +1,11 @@
 import "./List.css";
+import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import CloseIcon from '@mui/icons-material/Close';
 
 export const List = ({todolist , handleToggle , handleDelete}) =>{
+   
 return (
     <ul className="list">
         {todolist.map((listItem) =>(
@@ -20,7 +22,8 @@ return (
                 )
                     }
                    
-                   <DeleteOutlineIcon onClick = {() => handleDelete(listItem.id) } />
+                   < DeleteOutlineIcon onClick = {() => handleDelete(listItem.id) } />
+                   < DriveFileRenameOutlineIcon />
                 </span>
             </li>
         )
